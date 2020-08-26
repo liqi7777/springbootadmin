@@ -12,6 +12,7 @@ public class HelloController {
     @RequestMapping("/hello")
     public String index(@RequestParam String name) {
         log.info("hello,this is first message :{}", name);
+        log.error("hello,this is first message :{}", name);
         return "hello " + name + "，this is first messge";
     }
 }
